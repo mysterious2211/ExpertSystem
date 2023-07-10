@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.expert.ssm.mapper.ExpertMapper">
+
+    <!--void deleteAllTrues();-->
+    <delete id="deleteAllTrues">
+        delete from truething where 1=1
+    </delete>
+
+    <!--void insertTrue(TrueThing trueThing);-->
+    <insert id="insertTrue">
+        insert into truething value(null,#{true1},#{true2},#{true3},#{true4},
+        #{true5},#{true6},#{true7},#{true8},#{true9},#{true10},#{true11},
+        #{true12},#{true13},#{true14},#{true15},#{true16},#{true17},#{true18},
+        #{true19},#{true20},#{true21},#{true22},#{true23},#{true24})
+    </insert>
+
+    <!--List<Rules> getAllRules();-->
+    <select id="getAllRules" resultType="Rules">
+        select * from rules
+    </select>
+
+    <!--TrueThing getTrues();-->
+    <select id="getTrues" resultType="TrueThing">
+        select * from truething
+    </select>
+
+    <!--void updateTrue21(@Param("result") String result);-->
+    <update id="updateTrue21">
+        update truething set true21 = #{result}
+    </update>
+
+    <!--void updateTrue22(@Param("result") String result);-->
+    <update id="updateTrue22">
+        update truething set true22 = #{result}
+    </update>
+
+    <!--void updateTrue23(@Param("result") String result);-->
+    <update id="updateTrue23">
+        update truething set true23 = #{result}
+    </update>
+
+    <!--void updateTrue24(@Param("result") String result);-->
+    <update id="updateTrue24">
+        update truething set true24 = #{result}
+    </update>
+
+
+</mapper>
